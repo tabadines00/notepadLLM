@@ -5,9 +5,18 @@ import QuillEditor from '../../components/QuillEditor';
 const Notepad = () => {
     const [text, setText] = useState('');
 
-    const handleChange = (value: string) => {
-        setText(value);
+    const handleChange = (value: any, delta: any) => {
+        //setText(value);
+        console.log(delta)
     };
+
+    // const delt = {
+    //     ops: [
+    //       { insert: 'Gandalf', attributes: { bold: true } },
+    //       { insert: ' the ' },
+    //       { insert: 'Grey', attributes: { color: '#cccccc' } }
+    //     ]
+    //   }
 
     return (
         <div>
